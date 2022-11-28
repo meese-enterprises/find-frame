@@ -19,3 +19,19 @@ Optionally, a threshold integer can be specified to determine how close the imag
 ```shell
 python3 find-frame.py -v demo/mario_gameplay.mp4 -i demo/world_1-1.png -t 60
 ```
+
+### display nth frames
+
+Alternatively, if you are unable to locate the image in the video, you can break the video into individual frames to review manually.
+
+Example with the included video, which defaults to every 10th frame:
+
+```shell
+python3 break-into-frames.py -v demo/mario_gameplay.mp4
+```
+
+This example will show every 88th frame of the demo video:
+
+```shell
+python3 break-into-frames.py -v demo/mario_gameplay.mp4 -n 88
+```
